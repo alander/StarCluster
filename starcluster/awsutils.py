@@ -532,6 +532,7 @@ class EasyEC2(EasyAWS):
                                security_group_ids=None, subnet_id=None,
                                placement=None, placement_group=None,
                                user_data=None, block_device_map=None,
+                               ebs_optimized=True,
                                network_interfaces=None):
         kwargs = locals()
         kwargs.pop('self')
